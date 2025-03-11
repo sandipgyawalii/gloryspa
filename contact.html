@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Glory Spa & Wellness</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/logo.jpeg" alt="Glory Spa & Wellness"
+                class="d-inline-block align-text-top" height="100">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="careers.html">Careers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-primary rounded-pill" href="services.html">Book Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <section class="hero-banner">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p class="lead text-white">We're here to answer your questions and help you book your perfect spa experience</p>
+        </div>
+    </section>
+
+    <!-- Contact Info Cards -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <div class="contact-info-card h-100">
+                        <i class="bi bi-geo-alt"></i>
+                        <h4 class="mt-4 mb-3">Visit Us</h4>
+                        <!-- <p class="mb-1">1</p> -->
+                        <p class="mb-1">Kathmandu City, People Plaza</p>
+                        <p>Nepal</p>
+                        <a href="https://maps.app.goo.gl/H6SBnysTmzQoLMo7A" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill mt-3">Get Directions</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <div class="contact-info-card h-100">
+                        <i class="bi bi-telephone"></i>
+                        <h4 class="mt-4 mb-3">Call Us</h4>
+                        <p class="mb-1">Main: +977 9851346482</p>
+                        <p class="mb-1">Bookings: +977 9851346482</p>
+                        <p>Fax: +977 9851346482</p>
+                        <a href="tel:+9779851346482" class="btn btn-sm btn-outline-primary rounded-pill mt-3">Call Now</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-info-card h-100">
+                        <i class="bi bi-envelope"></i>
+                        <h4 class="mt-4 mb-3">Email Us</h4>
+                        <p class="mb-1">General: info@gloryspa.com.np</p>
+                        <p class="mb-1">Bookings: bookings@gloryspa.com.np</p>
+                        <p>Support: support@gloryspa.com.np</p>
+                        <a href="mailto:info@gloryspa.com.np" class="btn btn-sm btn-outline-primary rounded-pill mt-3">Send Email</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form and Map Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <h2 class="section-title mb-4">Send Us a Message</h2>
+                    <p class="mb-4">Have questions about our services or want to provide feedback? Fill out the form below and we'll get back to you as soon as possible.</p>
+                    
+                    <form id="contactForm" class="contact-form">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="firstName" class="form-label">First Name*</label>
+                                <input type="text" class="form-control" id="firstName" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="lastName" class="form-label">Last Name*</label>
+                                <input type="text" class="form-control" id="lastName" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="email" class="form-label">Email*</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="phone" class="form-label">Phone</label>
+                                <input type="tel" class="form-control" id="phone">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Subject*</label>
+                            <select class="form-select" id="subject" required>
+                                <option value="" selected disabled>Select a subject</option>
+                                <option value="General Inquiry">General Inquiry</option>
+                                <option value="Service Information">Service Information</option>
+                                <option value="Booking Question">Booking Question</option>
+                                <option value="Feedback">Feedback</option>
+                                <option value="Partnership">Partnership Opportunity</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="mb-4">
+                            <label for="message" class="form-label">Message*</label>
+                            <textarea class="form-control" id="message" rows="5" required></textarea>
+                        </div>
+                        <div class="form-check mb-4">
+                            <input class="form-check-input" type="checkbox" id="newsletter">
+                            <label class="form-check-label" for="newsletter">
+                                Subscribe to our newsletter for special offers and wellness tips
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary rounded-pill px-4">Send Message</button>
+                        
+                        <div class="mt-4 d-none" id="formSuccess">
+                            <div class="alert alert-success">
+                                Thank you for your message! We'll get back to you shortly.
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="col-lg-6">
+                    <h2 class="section-title mb-4">Find Us</h2>
+                    <div class="map-container rounded-4 shadow mb-4">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.501849800049!2d85.31072189999999!3d27.701787399999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19006e93b81b%3A0xc46dbcc6f459dd2a!2sGLORY%20SPA!5e0!3m2!1sne!2snp!4v1741607531308!5m2!1sne!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                        <!-- <img src="/placeholder.svg?height=400&width=600" alt="Map Location" class="img-fluid rounded-4"> -->
+                    </div>
+                    
+                    <div class="business-hours p-4 bg-light rounded-4">
+                        <h4 class="mb-3"><i class="bi bi-clock me-2"></i>Business Hours</h4>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul class="list-unstyled mb-0">
+                                    <li class="d-flex justify-content-between mb-2">
+                                        <span>Monday - Friday:</span>
+                                        <span>9:00 AM - 8:00 PM</span>
+                                    </li>
+                                    <li class="d-flex justify-content-between mb-2">
+                                        <span>Saturday:</span>
+                                        <span>9:00 AM - 6:00 PM</span>
+                                    </li>
+                                    <li class="d-flex justify-content-between">
+                                        <span>Sunday:</span>
+                                        <span>10:00 AM - 5:00 PM</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6 mt-3 mt-md-0">
+                                <p class="mb-2"><strong>Holiday Hours:</strong></p>
+                                <p class="mb-0">Hours may vary on holidays. Please call ahead to confirm.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Find quick answers to common questions</p>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item mb-3 border rounded-3 overflow-hidden">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    How do I book an appointment?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    You can book an appointment in several ways: online through our website, by calling our booking line at (555) 123-4568, or by visiting our spa in person. We recommend booking at least 48 hours in advance to ensure availability, especially for weekend appointments.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item mb-3 border rounded-3 overflow-hidden">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    What is your cancellation policy?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We require 24 hours' notice for cancellations or rescheduling. Cancellations made with less than 24 hours' notice may be subject to a cancellation fee of 50% of the service price. No-shows will be charged the full service amount.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item mb-3 border rounded-3 overflow-hidden">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Do you offer gift certificates?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes, we offer gift certificates for all our services and packages. Gift certificates can be purchased online, over the phone, or in person at our spa. They are valid for one year from the date of purchase and can be personalized with a special message.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item mb-3 border rounded-3 overflow-hidden">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    What should I do to prepare for my spa visit?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We recommend arriving 15-20 minutes before your scheduled appointment to complete any necessary paperwork and begin your relaxation journey. Please avoid heavy meals and alcohol consumption before your treatment. For massage services, it's best to avoid shaving on the day of your appointment.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item border rounded-3 overflow-hidden">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Do you have membership or loyalty programs?
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes, we offer a membership program that provides discounted rates on services, priority booking, and exclusive member-only promotions. We also have a loyalty program where you earn points for every dollar spent, which can be redeemed for services or products. Ask our front desk staff for more details on these programs.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center mt-4">
+                        <p>Don't see your question here? <a href="#contactForm" class="text-decoration-none">Contact us</a> and we'll be happy to help!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Connect With Us Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Connect With Us</h2>
+                <p class="section-subtitle">Follow us on social media for wellness tips, special offers, and spa updates</p>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="row text-center">
+                        <div class="col-md-3 col-6 mb-4">
+                            <a href="#" class="social-link-card d-block p-4 rounded-4 bg-light">
+                                <i class="bi bi-facebook fs-1 mb-3"></i>
+                                <h5>Facebook</h5>
+                                <p class="mb-0 text-muted">@gloryspa</p>
+                            </a>
+                        </div>
+                        <div class="col-md-3 col-6 mb-4">
+                            <a href="#" class="social-link-card d-block p-4 rounded-4 bg-light">
+                                <i class="bi bi-instagram fs-1 mb-3"></i>
+                                <h5>Instagram</h5>
+                                <p class="mb-0 text-muted">@gloryspa</p>
+                            </a>
+                        </div>
+                        <div class="col-md-3 col-6 mb-4">
+                            <a href="#" class="social-link-card d-block p-4 rounded-4 bg-light">
+                                <i class="bi bi-twitter fs-1 mb-3"></i>
+                                <h5>Twitter</h5>
+                                <p class="mb-0 text-muted">@gloryspa</p>
+                            </a>
+                        </div>
+                        <div class="col-md-3 col-6 mb-4">
+                            <a href="#" class="social-link-card d-block p-4 rounded-4 bg-light">
+                                <i class="bi bi-pinterest fs-1 mb-3"></i>
+                                <h5>Pinterest</h5>
+                                <p class="mb-0 text-muted">@gloryspa</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-4">
+                <div class="col-12">
+                    <div class="newsletter-signup text-center p-5 rounded-4 bg-primary text-white">
+                        <h3 class="text-white mb-3">Join Our Mailing List</h3>
+                        <p class="mb-4">Subscribe to receive exclusive offers, wellness tips, and updates from Glory Spa & Wellness</p>
+                        <div class="row justify-content-center">
+                            <div class="col-md-6">
+                                <form class="d-flex">
+                                    <input type="email" class="form-control me-2" placeholder="Your Email Address" required>
+                                    <button type="submit" class="btn btn-light rounded-pill px-4">Subscribe</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h5 class="text-white mb-4">Glory Spa & Wellness</h5>
+                    <p class="text-white-50">A sanctuary for relaxation and
+                        rejuvenation, where your well-being is our
+                        priority.</p>
+                    <div class="social-icons mt-4">
+                        <a href="#" class="me-2"><i
+                                class="bi bi-facebook"></i></a>
+                        <a href="#" class="me-2"><i
+                                class="bi bi-instagram"></i></a>
+                        <a href="#" class="me-2"><i
+                                class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-white mb-4">Quick Links</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-white mb-4">Services</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="service-detail.html">Massage
+                                Therapy</a></li>
+                        <li><a href="service-detail.html">Facial
+                                Treatments</a></li>
+                        <li><a href="service-detail.html">Body
+                                Treatments</a></li>
+                        <li><a
+                                href="service-detail.html">Aromatherapy</a></li>
+                        <li><a href="service-detail.html">Wellness
+                                Packages</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Contact Us</h5>
+                    <ul class="list-unstyled contact-info">
+                        <li><i class="bi bi-geo-alt"></i> Kathmandu Nepal</li>
+                        <li><i class="bi bi-telephone"></i> (555)
+                            123-4567</li>
+                        <li><i class="bi bi-envelope"></i>
+                            info@gloryspa.com.np</li>
+                        <li><i class="bi bi-clock"></i> Mon-Sat: 9:00 AM -
+                            8:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="text-white-50 mb-0">&copy; 2025 Glory Spa &
+                        Wellness. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="text-white-50 mb-0">
+                        <a href="#" class="text-white-50">Privacy Policy</a>
+                        |
+                        <a href="#" class="text-white-50">Terms of
+                            Service</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Simple form submission handling
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // In a real implementation, you would send the form data to a server here
+            
+            // Show success message
+            document.getElementById('formSuccess').classList.remove('d-none');
+            
+            // Reset form
+            this.reset();
+            
+            // Hide success message after 5 seconds
+            setTimeout(function() {
+                document.getElementById('formSuccess').classList.add('d-none');
+            }, 5000);
+        });
+    </script>
+</body>
+</html>
